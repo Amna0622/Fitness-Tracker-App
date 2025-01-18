@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".fitnesstracker">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Fitness Tracker"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Select Category"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <Spinner
+        android:id="@+id/spinner_fitness_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:entries="@array/fitness_categories"
+        android:background="@color/white"
+        android:padding="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_view_category"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:text="View Category"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Enter Your Goal"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your goal"
+            android:background="@color/white"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_set_goal"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:text="Set Goal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="8dp" />
+</LinearLayout>
+

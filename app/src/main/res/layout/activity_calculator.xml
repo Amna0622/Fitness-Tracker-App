@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".calculator">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Simple Calculations"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter First No"
+        android:inputType="number"
+        android:padding="18dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edt_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Second No"
+        android:inputType="number"
+        android:padding="18dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Result"
+        android:inputType="number"
+        android:padding="18dp"
+        android:textColor="@color/teal_700"
+        android:textSize="22dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            android:padding="10dp"
+            android:text="+"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            android:padding="10dp"
+            android:text="×"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/btn_subtraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            android:padding="10dp"
+            android:text="-"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            android:padding="10dp"
+            android:text="÷"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="fitness_categories">
+        <item>Cardio</item>
+        <item>Strength Training</item>
+        <item>Flexibility</item>
+        <item>Balance</item>
+        <item>Heart Monitoring</item>
+        <item>Sleep duration</item>
+        <item>Weight</item>
+        <item>Stress levels</item>
+        <item>Water intake</item>
+        <item>Calories burned</item>
+        <item>Exercise type</item>
+        <item>Blood oxygen level</item>
+    </string-array>
+</resources>
